@@ -1,0 +1,123 @@
+/* === POSTIT — Styling === */
+ :root {
+   --primary: #08296e;
+   --dark: #1f2937;
+   --light: #f3f4f6;
+   --green: #16a34a;
+   --shadow: 0 4px 12px rgba(0,0,0,0.08);
+ }
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Roboto, sans-serif;
+ }
+ body {
+   background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+   min-height: 100vh;
+   padding: 2rem 1rem;
+ }
+ .container {
+   max-width: 650px;
+   margin: 0 auto;
+ }
+ h1 {
+   text-align: center;
+   color: var(--dark);
+   margin-bottom: 2rem;
+   font-size: 1.8rem;
+ }
+ .card {
+   background: white;
+   border-radius: 14px;
+   padding: 2rem;
+   box-shadow: var(--shadow);
+   margin-bottom: 1.5rem;
+ }
+ .hidden {
+   display: none;
+ }
+ h2 {
+   color: var(--dark);
+   margin-bottom: 0.5rem;
+   font-size: 1.25rem;
+ }
+ .note {
+   color: #6b7280;
+   font-size: 0.9rem;
+   margin-bottom: 1.2rem;
+ }
+ input, select, textarea {
+   width: 100%;
+   padding: 0.9rem 1rem;
+   margin: 0.5rem 0;
+   border: 1px solid #d1d5db;
+   border-radius: 8px;
+   font-size: 1rem;
+   transition: border 0.2s;
+ }
+ input:focus, select:focus, textarea:focus {
+   outline: none;
+   border-color: var(--primary);
+ }
+ button {
+   width: 100%;
+   padding: 0.9rem;
+   background: var(--primary);
+   color: white;
+   border: none;
+   border-radius: 8px;
+   font-size: 1rem;
+   font-weight: 600;
+   cursor: pointer;
+   margin-top: 0.8rem;
+   transition: background 0.2s;
+ }
+ button:hover {
+   background: #1d4ed8;
+ }
+ .welcome {
+   background: #eff6ff;
+   padding: 1rem;
+   border-radius: 8px;
+   margin-bottom: 1.2rem;
+   color: #1e40af;
+   font-weight: 500;
+ }
+ textarea {
+   min-height: 110px;
+   resize: vertical;
+ }
+ /* Individual Post Card */
+ .post-card {
+   background: #fafafa;
+   border-radius: 10px;
+   padding: 1.3rem;
+   margin-top: 1.5rem;
+   border-left: 4px solid var(--primary);
+ }
+ .label {
+   font-size: 0.75rem;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+   color: #6b7280;
+   font-weight: 700;
+   margin: 0.8rem 0 0.3rem;
+ }
+ .original {
+   font-size: 1rem;
+   color: var(--dark);
+   line-height: 1.6;
+   padding: 0.5rem 0;
+   border-bottom: 1px dashed #d1d5db;
+ }
+ .encrypted {
+   font-family: 'Courier New', monospace;
+   font-size: 0.8rem;
+   color: var(--green);
+   background: #f0fdf4;
+   padding: 0.8rem;
+   border-radius: 6px;
+   word-break: break-all;
+   margin-top: 0.3rem;
+ }
